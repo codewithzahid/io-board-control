@@ -1,8 +1,15 @@
 {
     "C_Cpp.intelliSenseEngine": "default",
-    "idf.espIdfPathWin": "C:\\Users\\Jumi\\esp\\v5.2\\esp-idf",
+    "idf.espIdfPathWin": "e:\\Espressif\\v5.2.1\\esp-idf",
     "idf.openOcdConfigs": [
         "board/esp32-wrover-kit-3.3v.cfg"
     ],
-    "idf.toolsPathWin": "C:\\Users\\Jumi\\.espressif"
+    "idf.toolsPathWin": "e:\\Espressif",
+    "files.associations": {
+        "configuration.h": "c",
+        "freertos.h": "c",
+        "gpio_config.h": "c",
+        "task.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
