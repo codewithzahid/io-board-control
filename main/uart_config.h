@@ -13,7 +13,7 @@
 #define UART_TX_PIN GPIO_NUM_1
 #define UART_RX_PIN GPIO_NUM_3
 #define BUF_SIZE 1024
-#define UART_BAUD_RATE 115200
+int baud_rate = 115200
 
 esp_err_t uart_init();
 esp_err_t uart_write_data(const char *tx_buffer);

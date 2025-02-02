@@ -1,4 +1,4 @@
-/* * Data converted from G:/Github/io-board-control/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/GitHub/io-board-control/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

@@ -1,10 +1,10 @@
 {
     "C_Cpp.intelliSenseEngine": "default",
-    "idf.espIdfPathWin": "e:\\Espressif\\v5.2.1\\esp-idf",
+    "idf.espIdfPathWin": "C:\\Users\\Jumi\\esp\\v5.2\\esp-idf",
     "idf.openOcdConfigs": [
         "board/esp32-wrover-kit-3.3v.cfg"
     ],
-    "idf.toolsPathWin": "e:\\Espressif",
+    "idf.toolsPathWin": "C:\\Users\\Jumi\\.espressif",
     "files.associations": {
         "configuration.h": "c",
         "freertos.h": "c",
