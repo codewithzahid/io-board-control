@@ -54,27 +54,31 @@ esp_err_t uart_read_data(char *rx_buffer, size_t buf_size) {  // Added buffer si
   return ESP_ERR_TIMEOUT;  // Return timeout if no data received
 }
 
-/*
-void parse_command(char* cmd) {
-    char command[20];
-    char parameter[20];
-    int channel;
-    int value;
+void parse_command(char *cmd) {
+  char command[20];
+  char parameter[20];
+  int channel;
+  int value = -1;
 
-    // Parse command like "SET AOUT 1 512"
-    if (sscanf(cmd, "%s %s %d %d", command, parameter, &channel, &value) == 4) {
-        if (strcmp(command, "SET") == 0 && strcmp(parameter, "AOUT") == 0) {
-            printf("Parsed Command:\n");
-            printf("Action: %s\n", command);
-            printf("Parameter: %s\n", parameter);
-            printf("Channel: %d\n", channel);
-            printf("Value: %d\n", value);
+  // Try parsing with 4 arguments first
+  int parsed_count = sscanf(cmd, "%s %s %d %d", command, parameter, &channel, &value);
 
-            // Here you can add your logic to handle the analog output
-            // For example: set_analog_output(channel, value);
-        }
-    } else {
-        printf("Invalid command format\n");
+  if (parsed_count == 4) {  // If all 4 values are provided
+    if (strcmp(command, "SET") == 0 && strcmp(parameter, "AOUT") == 0) {
+      printf("Parsed Command:\n");
+      printf("Action: %s\n", command);
+      printf("Parameter: %s\n", parameter);
+      printf("Channel: %d\n", channel);
+      printf("Value: %d\n", value);
     }
+  } else if (parsed_count == 3) {  // If only 3 values are provided
+    if (strcmp(command, "SET") == 0 && strcmp(parameter, "AOUT") == 0) {
+      printf("Parsed Command (without value):\n");
+      printf("Action: %s\n", command);
+      printf("Parameter: %s\n", parameter);
+      printf("Channel: %d\n", channel);
+    }
+  } else {
+    printf("Invalid command format\n");
+  }
 }
-*/

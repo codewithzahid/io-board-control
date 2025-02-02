@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "io-board-control",
-    "project_version":    "19ecd4e-dirty",
+    "project_version":    "b0f8ce2-dirty",
     "project_path":       "G:/Github/io-board-control",
     "idf_path":           "E:/Espressif/v5.2.1/esp-idf",
     "build_dir":          "G:/Github/io-board-control/build",
